@@ -26,7 +26,11 @@ filetype plugin indent on    " required
 
 "upper for Vundle
 
+"Tab 長度為 4
+set tabstop=4
 
+"自動縮排長度為 4
+set shiftwidth=4
 
 "文字編輯使用utf-8
 set enc=utf8
