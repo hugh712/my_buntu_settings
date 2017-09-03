@@ -1,10 +1,26 @@
+#!/bin/bash
+
+set -u
+
+#check yum or apt-get 
+isApt=`whereis apt-get | sed s/apt-get://g`
+isYum=`whereis yum | sed s/yum://g`
+
+if [ -n "$isApt" ]; then
+	Installer="apt-get"	
+elif [ -n "$isYum" ];then
+	Installer="yum"
+else
+	echo "Neither Apt nor Yum!"
+	exit -1
+fi
 
 echo -e "\033[32m install nessesary packages\033[0m"
-sudo apt-get update
-sudo apt-get install git-core vim curl byacc -y
-sudo apt-get install git curl gcc make automake flex -y
-sudo apt-get install libncurses5-dev  exuberant-ctags -y
-sudo apt-get install tmux -y
+sudo $Installer update
+sudo $Installer install git-core vim curl byacc -y
+sudo $Installer install git curl gcc make automake flex -y
+sudo $Installer install libncurses5-dev  exuberant-ctags -y
+sudo $Installer install tmux -y
 
 echo -e "\033[32m install cscope from tarball\033[0m"
 echo -e "\033[32m cscopeversion 2.0 [2015-03-23]\033[0m"
@@ -32,3 +48,4 @@ echo -e "\033[32m install all plugin\033[0m"
 vim +PluginInstall +qall
 
 echo -e "\033[32m done...\033[0m"
+
