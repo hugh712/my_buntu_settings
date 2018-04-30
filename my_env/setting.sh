@@ -28,3 +28,7 @@ if [ $NUMS == 0 ]; then
 fi
 
 source ~/.bashrc
+
+#copy autostart
+mkdir -p ~/.config/autostart/
+cp -rf autostart/* ~/.config/autostart/
