@@ -11,6 +11,8 @@ sudo apt-get install build-essential -y
 sudo apt-get install packaging-dev -y
 sudo apt-get install hexchat -y 
 sudo apt-get install ubuntu-dev-tools -y
+sudo apt-get install chrome-gnome-shell -y
+sudo apt-get install gnome-tweaks -y
 
 pbuilder-dist trusty create
 pbuilder-dist xenial create
