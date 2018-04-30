@@ -2,7 +2,7 @@
 set -e
 MY_LC_TIME="export LC_TIME=en_US.UTF-8"
 
-if [ -n 'grep "DEBFULLNAME" ~/.bashrc' ]; then
+if [ -z 'grep "DEBFULLNAME" ~/.bashrc' ]; then
 	echo 'export DEBFULLNAME="hugh chao"' >> ~/.bashrc
 	echo 'export DEBEMAIL="hugh.chao@canonical.com"' >>~/.bashrc
 fi
