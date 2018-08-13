@@ -35,3 +35,12 @@ source ~/.bashrc
 #copy autostart
 mkdir -p ~/.config/autostart/
 cp -rf autostart/* ~/.config/autostart/
+
+
+# install TopIcons-plus
+git clone https://github.com/phocean/TopIcons-plus.git
+cd TopIcons-plus
+make install
+cd ..
+rm -rf TopIcons-plus
+gnome-shell --replace
