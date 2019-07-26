@@ -14,6 +14,8 @@ sudo apt-get install ubuntu-dev-tools -y
 sudo apt-get install chrome-gnome-shell -y
 sudo apt-get install gnome-tweaks -y
 sudo apt install ibus-chewing -y
+sudo apt install xsel -y
+sudo apt install gpaste -y
 
 pbuilder-dist trusty create
 pbuilder-dist xenial create
