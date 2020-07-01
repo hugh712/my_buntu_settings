@@ -8,6 +8,7 @@ if [ -z 'grep "DEBFULLNAME" ~/.bashrc' ]; then
 fi
 
 sudo apt-get install build-essential -y
+sudo apt-get install devscripts -y
 sudo apt-get install packaging-dev -y
 sudo apt-get install hexchat -y 
 sudo apt-get install ubuntu-dev-tools -y
