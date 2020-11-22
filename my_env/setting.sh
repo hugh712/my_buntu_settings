@@ -30,6 +30,12 @@ if [ $NUMS == 0 ]; then
 	echo $MY_LS_COLOR >> ~/.bashrc
 fi
 
+NUMS=$(grep "GOPATH" ~/.bashrc | wc -w)
+if [ $NUMS == 0 ]; then
+	echo 'export GOPATH=${HOME}/work' >> ~/.bashrc
+	echo 'export PATH="$PATH:$GOPATH/bin"' >> ~/.bashrc
+fi
+
 source ~/.bashrc
 
 #copy autostart
