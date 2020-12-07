@@ -18,7 +18,7 @@ Plugin 'ctags.vim'
 Plugin 'cscope.vim'
 Plugin 'snipMate'
 Plugin 'neocomplcache'
-Plugin 'unite.vim'
+"Plugin 'unite.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
