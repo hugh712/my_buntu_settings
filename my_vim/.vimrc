@@ -18,6 +18,7 @@ Plugin 'ctags.vim'
 Plugin 'cscope.vim'
 Plugin 'snipMate'
 Plugin 'neocomplcache'
+Plugin 'powerline/powerline'
 "Plugin 'unite.vim'
 
 " All of your Plugins must be added before the following line
