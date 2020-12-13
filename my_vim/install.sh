@@ -25,7 +25,8 @@ repos_req=( "yegappan/taglist" \
             "vim-scripts/cscope.vim" \
             "garbas/vim-snipmate" \
             "Shougo/neocomplcache.vim" \
-            "powerline/powerline"
+            "powerline/powerline" \
+            "junegunn/fzf.vim"
 )
 url_base="https://github.com"
 path_req=~/.vim/pack/vendor/start
