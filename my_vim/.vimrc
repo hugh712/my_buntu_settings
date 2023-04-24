@@ -56,7 +56,11 @@ nnoremap <C-c> :cs find c <C-R>=expand("<cword>")<CR><CR>
 
 
 "for neocomplacache enable
-let g:neocomplcache_enable_at_startup = 1 
-let g:netrw_liststyle = 3
+"let g:neocomplcache_enable_at_startup = 1 
+"let g:netrw_liststyle = 3
 
 colo elflord
+
+" For buffer
+set hidden
+noremap <silent> <C-b> :buffers<CR>
