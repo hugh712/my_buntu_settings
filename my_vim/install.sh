@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -u
-
+Installer=apt
 echo -e "\033[32m install nessesary packages\033[0m"
 sudo $Installer update
 sudo $Installer install git-core vim curl byacc -y
