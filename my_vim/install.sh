@@ -7,7 +7,7 @@ sudo $Installer update
 sudo $Installer install git-core vim curl byacc -y
 sudo $Installer install git curl gcc make automake flex -y
 sudo $Installer install libncurses5-dev  exuberant-ctags -y
-sudo $Installer install tmux cscope -y
+sudo $Installer install tmux cscope vim-addon-mw-utils -y
 
 copy vimrc to ~/
 echo -e "\033[32m copy vimrc to home directory\033[0m"
