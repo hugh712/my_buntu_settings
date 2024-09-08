@@ -7,7 +7,7 @@ sudo $Installer update
 sudo $Installer install git-core vim curl byacc -y
 sudo $Installer install git curl gcc make automake flex -y
 sudo $Installer install libncurses5-dev  exuberant-ctags -y
-sudo $Installer install tmux -y
+sudo $Installer install tmux cscope -y
 
 copy vimrc to ~/
 echo -e "\033[32m copy vimrc to home directory\033[0m"
@@ -22,7 +22,6 @@ echo -e "\033[32m git clone all git repos \033[0m"
 repos_req=( "yegappan/taglist" \
             "preservim/nerdtree" \
             "vim-scripts/ctags.vim" \
-            "vim-scripts/cscope.vim" \
             "garbas/vim-snipmate" \
             "Shougo/neocomplcache.vim" \
             "powerline/powerline" \
